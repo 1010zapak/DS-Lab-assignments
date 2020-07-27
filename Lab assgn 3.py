@@ -56,12 +56,9 @@ def calculator():
         return a/b
 
 def linearsearch():
-    arr = []
-    n = int(input("Enter number of elements in an array"))
-    for i in range(n):
-        arr[i] = int(input("Enter element of array"))
+    arr = inpu()
     x = int(input("enter element to search"))
-    for i in range(0,n):
+    for i in range(0,len(arr)):
         if arr[i]==x:
             print("Element found at index",i+1)
 
@@ -70,13 +67,21 @@ def decimal_to_hexadecimal(n):
     a = hex(n)
     return a[2:]
 
-print(sq(9))
-print(swap(3,4))
-print(sum_of_series())
-print(decimal_to_binary(6))
+def inpu():
+    arr = []
+    n = int(input("Enter number of elements in an array"))
+    for i in range(n):
+        arr.append(int(input("Enter element of array")))
+    return arr
+
+
+#print(sq(9))
+#print(swap(3,4))
+#print(sum_of_series())
+#print(decimal_to_binary(6))
 #print(max_min())
-print(case_count('The quick Brow Fox'))
-print(fibonacci(9))
+#print(case_count('The quick Brow Fox'))
+#print(fibonacci(9))
 #print(calculator())
 #print(linearsearch())
-print(decimal_to_hexadecimal(12))
+#print(decimal_to_hexadecimal(12))
