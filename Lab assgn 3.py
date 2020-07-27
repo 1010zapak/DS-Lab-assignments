@@ -61,7 +61,7 @@ def linearsearch():
     for i in range(0,len(arr)):
         if arr[i]==x:
             print("Element found at index",i+1)
-
+    return "linear search finished"
 
 def decimal_to_hexadecimal(n):
     a = hex(n)
